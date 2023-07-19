@@ -113,25 +113,6 @@ public class SuperFont extends Font {
                     x += (float) this.width(s);
                     the_step += 1.0f;
                 }
-            } else if (Mode == 1) {
-                int i = 0;
-                float huehuehue = (float) milliTime() / 700.0F % 1.0F;
-                float huehuehueStep = (float) rangeRemap(Math.sin((float) milliTime() / 1200.0F) % 6.28318D, -0.9D, 2.5D, 0.025D, 0.15D);
-                char[] chars = text.toCharArray();
-                for (char c : chars) {
-                    String s = String.valueOf(c);
-                    int rgb = Color.HSBtoRGB(huehuehue, 0.8F, 1.0F);
-                    render_text(isStack, isDrawInBatch, isShadow, s, rgb, x, y);
-                    x += (float) this.width(s);
-                    y += i;
-                    huehuehue += huehuehueStep;
-                    huehuehue %= 1.0F;
-                    if (i == 0) {
-                        i += 1;
-                    } else {
-                        i -= 1;
-                    }
-                }
             }
         } else {
             text = text.replaceAll("(?i)§[0-9A-FK-OR]", "");
