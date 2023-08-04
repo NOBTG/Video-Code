@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.timeclock.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "TimeClock.refmap.json",
+  "mixins": [
+    "Time_Clock_Mixins$ExperienceOrbMixin",
+    "Time_Clock_Mixins$ForgeEventFactoryMixin",
+    "Time_Clock_Mixins$ItemEntityMixin",
+    "Time_Clock_Mixins$LivingEntityMixin",
+    "Time_Clock_Mixins$MinecraftServerMixin",
+    "Time_Clock_Mixins$RenderLevelStageEventMixin",
+    "Time_Clock_Mixins$ServerMixin",
+    "Time_Clock_Mixins$TimeMixin"
+  ],
+  "client": [
+    "Time_Clock_Mixins$CameraMixin",
+    "Time_Clock_Mixins$ChatListenerMixin",
+    "Time_Clock_Mixins$GameRendererMixin",
+    "Time_Clock_Mixins$MinecraftMixin",
+    "Time_Clock_Mixins$RenderMixin",
+    "Time_Clock_Mixins$ScreenMixin",
+    "Time_Clock_Mixins$Server_Pause"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
